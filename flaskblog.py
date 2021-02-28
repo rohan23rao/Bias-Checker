@@ -48,7 +48,21 @@ def home():
 def user():
         text = svo2.main(global_text)
         print(text)
-        return f"""<h1>Overall Bias: {abs(text['compound']*100)}% </h1><body>Negative Intent: {text['neg']*100}%</body><br><body>Positive Intent: {text['pos']*100}%</body>"""
+        return f"""
+            <h1>Overall Bias: {abs(text['compound']*100)}% </h1>
+                <body>Negative Intent: {text['neg']*100}%</body>
+                    <br>
+                <body>Positive Intent: {text['pos']*100}%</body>
+"""
+
+# return f"""
+# {% extends "layout.html" %}
+# {% block content%}
+#     <h1>About Page</h1>
+#     <body>
+#     </body>
+# {% endblock content %}
+# """
 
 @app.route("/about")
 def about():
