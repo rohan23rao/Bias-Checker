@@ -1,0 +1,10 @@
+.text-box {
+ border: solid 1px black;
+ min-width:100px;
+ padding: 5px;
+ display: inline-block;
+}
+
+.text-box:focus{
+  outline:0;
+}

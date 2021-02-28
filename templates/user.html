@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content%}
+<p><strong style='box-sizing: border-box; font-weight: bolder; color: rgb(51, 51, 51); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(250, 250, 250); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'><span style="font-size: 35px; font-family: Verdana, Geneva, sans-serif;">Your Entry:</span></strong></p>
+<p><span style="font-size: 20px; font-family: Arial, Helvetica, sans-serif;">{{text}}</span></p>
+<!--<h1>Overall Bias: {{bias}}% </h1>-->
+<!--    <body>Negative Intent: {{neg}}%</body>-->
+<!--        <br>-->
+<!--    <body>Positive Intent: {{pos}}%</body>-->
+<!--    <br>-->
+
+<p><span style="font-size: 22px;"><strong><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">Overall Bias: {{bias}}% </span></strong></span></p>
+<p><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;"><strong><span style="font-size: 22px;">Negative Intent: {{neg}}%</span></strong></span></p>
+<p><span style="font-size: 22px;"><strong><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">Positive Intent: {{pos}}%</span></strong></span></p>
+
+
+
+    <body>
+    To know more about what these score mean, check the <a class="navbar-brand mr-4" href="/about">About Page</a>
+    </body>
+{% endblock content %}

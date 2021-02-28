@@ -47,14 +47,18 @@ def home():
 @app.route("/user")
 def user():
         text = svo2.main(global_text)
-        print(text)
-        return f"""
-            <h1>Overall Bias: {abs(text['compound']*100)}% </h1>
-                <body>Negative Intent: {text['neg']*100}%</body>
-                    <br>
-                <body>Positive Intent: {text['pos']*100}%</body>
-"""
-
+        # print(global_text)
+        bias = round(abs(text['compound']*100), 2)
+        neg_intent = text['neg']*100
+        pos_intent = text['pos']*100
+        polarity = (bias, neg_intent, pos_intent)
+        # return f"""
+        #     <h1>Overall Bias: {bias}% </h1>
+        #         <body>Negative Intent: {neg_intent}%</body>
+        #             <br>
+        #         <body>Positive Intent: {pos_intent}%</body>
+        # """
+        return render_template("user.html", bias=bias, neg=neg_intent, pos=pos_intent, text=global_text)
 # return f"""
 # {% extends "layout.html" %}
 # {% block content%}
