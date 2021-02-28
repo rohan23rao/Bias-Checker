@@ -1,3 +1,5 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/rohan23rao/Bias-Checker)
+
 Bias Checker
 ==============
 This is a flask web app which contains a bias checker. It can 
