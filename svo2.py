@@ -24,14 +24,7 @@ def recursive_file_gen(mydir):
 # 	lines_list = tokenize.sent_tokenize(paragraph)
 # 	sentences.extend(lines_list)
 
-def splitSentences2():
-    path = '/home/triya/Desktop/cnn/cnn_cleaned/'
-    l = list(recursive_file_gen(path))
-    for filename in l:
-        with open(filename) as f:
-            paragraph = f.read()
-            lines_list = tokenize.sent_tokenize(paragraph)
-            sentences.extend(lines_list)
+
 
 
 # def writeCSV(f, svo_list, np, ss):
@@ -95,7 +88,7 @@ def main(text):
     global sentences
     sentences = [text]
     # splitSentences()
-    splitSentences2()
+    # splitSentences2()
     for sentence in sentences:
         print(sentence)
         # f, svo_list, np = getSVOs(sentence)
