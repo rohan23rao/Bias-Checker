@@ -33,16 +33,14 @@ def home():
     global global_text
     # return render_template('home.html', posts=posts)
     # return render_template('home.html')
-    if request.method == "POST":
-
-        text = request.form["nm"]
-        global_text = text
-        return redirect(url_for("user", usr=text))
-    else:
+    if request.method != "POST":
         # return redirect(url_for("user"))
 
         return render_template("login.html")
 
+    text = request.form["nm"]
+    global_text = text
+    return redirect(url_for("user", usr=text))    
 
 @app.route("/user")
 def user():
@@ -105,6 +103,6 @@ def about():
 
 if __name__ == '__main__':
     app.run(debug=True)
-for i in range(1, 10):
+for _ in range(1, 10):
     print(10)
 
