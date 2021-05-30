@@ -1,6 +1,6 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/rohan23rao/Bias-Checker)
 [![Hackathon-Demo](https://img.shields.io/badge/Demo-Bias--Checker--Website-red)](https://devpost.com/software/bias-checker-q25yrh)
-Bias Checker
+
 ==============
 This is a flask web app which contains a bias checker. It can 
 check your if your writing is bias or not, and score it relatively
